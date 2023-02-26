@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+}
+#homePage{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-image: url("assets\\home\\background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow-x: auto;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+#logoIcon{
+    width: 40px;
+}
+#menuIcon{
+    width: 22px;
+}
+#navLaptop{
+    display: none;
+}
+#homePageBodyTop{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+#homePageBodyTop_1{
+    font-size: 19px;
+    margin: 5px;
+}
+#homePageBodyTop_2{
+    font-size: 5em;
+    margin-bottom: 35px;
+}
+#homePageBodySecond{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+#exploreDiv{
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+#navMobile{
+    position: fixed;
+    right: 0;
+    width: 60%;
+    min-height: 100%;
+    top: 0;
+    backdrop-filter: blur(81.5485px);
+    background-color: #ffffff0a;
+    right: -100%;
+}
+#closeButton{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 17px;
+}
+#navItemsDiv{
+    padding-top: 90px;
+}
+.links{
+    text-decoration: none;
+    color: white;
+}
+p{
+    color: #e8ebfc;
+    font-size: 15px;
+}
+.navItems{
+    padding: 22px 25px;
+}
+
+/* destination page */
+#destinationPage{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-image: url("assets\\destination\\background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #e8ebfc;
+    padding-bottom: 30px;
+}
+#destinationPageBodyTop{
+    padding-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#destinationPageBodyTopText{
+    width: 100%;
+    text-align: center;
+}
+#destinationPageBodyTopImgDiv{
+    width: 140px;
+    height: 140px;
+    margin: 40px;
+}
+.destinationImages{
+    width: 140px;
+    display: none;
+}
+#moonImg{
+    display: block;
+}
+#destinationPageBodyBottom{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0 20px;
+}
+#destinationMoon{
+    border-bottom: 2px solid white;
+}
+#destinationItemsDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.destinationItems{
+    margin: 0 12px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+.destinationItems:hover{
+    cursor: pointer;
+    color: #bebebe;
+}
+#selectDestinationTitle{
+    font-size: 56px;
+    margin: 15px 0;
+}
+.hrType1{
+    background-color: #acaaaa28;
+    height: 1px;
+    border: none;
+    margin: 35px 0;
+}
+.extratextType1{
+    margin: 10px;
+    font-size: 14px;
+}
+.extratextType2{
+    margin-bottom: 40px;
+    font-size: 1.8em;
+}
+
+/* crew */
+#crewPage{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-image: url("assets\\crew\\background-crew-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #e8ebfc;
+    overflow-x: auto;
+}
+#crewPageBodyHeading{
+    margin: 30px;
+    text-align: center;
+}
+#crewPageBodyHeading2{
+    display: none;
+}
+#crewPageBodyImgsectionContainer{
+    height: 220px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+#crewPageBodyImgsection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.crewPageBodyImgs{
+    width: 140px;
+    display: none;
+}
+#crewPageBodyImg1{
+    display: block;
+}
+.hrType2{
+    height: 1px;
+    border: none;
+    background-color: #acaaaa41;
+}
+#crewPageBodyTextsection{
+    width: 100%;
+    text-align: center;
+    padding:0 20px;
+}
+#crewPageBodySelectionDiv{
+    min-width: 155px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+}
+.crewPageBodySelectionItems{
+    width: 10px;
+    height: 10px;
+    background-color: #acaaaa59;
+    margin: 0 13px;
+    border-radius: 50%;
+}
+.crewPageBodySelectionItems:hover{
+    cursor: pointer;
+}
+#crewPageBodySelectionItem1{
+    background-color: #fff;
+}
+#crewPosition{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#crewName{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+#crewInfo{
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+/* technology */
+#technologyPage{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-image: url("assets\\technology\\background-technology-mobile.jpg");
+    color: #e8ebfc;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#technologyPageBody{
+    width: 100%;
+}
+#technologyPageBodyHeading{
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+#technologyPageBodyImgsection{
+    width: 100%;
+    height: auto;
+}
+#techImg2{
+    display: none;
+}
+.technologyPageBodyImgs{
+    display: none;
+    width: 100%;
+}
+#technologyPageBodyImg1{
+    display: block;
+}
+#technologyPageBodySelectionDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    margin-bottom: 50px;
+}
+.technologyPageBodySelectionItems{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #acaaaa28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 13px;
+}
+.technologyPageBodySelectionItems:hover{
+    cursor: pointer;
+}
+#technologyPageBodySelectionItem1{
+    background-color: #ffffff;
+    color: #000000;
+}
+#technologyPageBodyTextDiv{
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+#technologyLabel{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#technologyName{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+#technologyInfo{
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+@media screen and (min-width: 481px){
+    #homePageBodyTop{
+        padding: 10px 80px;
+    }
+    #homePageBodyTop_1{
+        font-size: 20px;
+    }
+    #homePageBodyTop p{
+        font-size: 17px;
+    }
+    #menuIcon{
+        display: none;
+    }
+    #navLaptop{
+        display: flex;
+        font-size: 13px;
+        background-color: #11131d;
+        height: 60px;
+        padding: 0 15px;
+        padding-top: 10px;
+        margin-bottom: auto;
+    }
+    nav{
+        padding-right: 0;
+    }
+    .navItems{
+        margin: 10px;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    #homePage{
+        background-image: url("assets\\home\\background-home-tablet.jpg");
+    }
+    #homePageBodyTop_1{
+        font-size: 26px;
+    }
+    #homePageBodyTop_2{
+        font-size: 6.3em;
+    }
+    #homePageBodyTop p{
+        font-size: 20px;
+    }
+    #homePageBodySecond{
+        padding-top: 80px;
+    }
+    #exploreDiv{
+        width: 140px;
+        height: 140px;
+    }
+    /* destination */
+    #destinationPageBodyTopText{
+        width: 100%;
+        text-align: left;
+        padding: 0 70px;
+        padding-bottom: 20px;
+    }
+    #destinationPageBodyBottom{
+        padding:0 70px;
+    }
+    #selectDestinationText{
+        line-height: 1.4;
+    }
+    /* crew */
+    #crewPageBodyHeading{
+        text-align: left;
+        margin: 30px 20px;
+    }
+    #crewPageBody{
+        display: flex;
+        flex-direction: column;
+    }
+    #crewPageBodyHeading{
+        order: 1;
+    }
+    .hrType2{
+        display: none;
+    }
+    #crewPageBodyTextsection{
+        order: 2;
+    }
+    #crewPageBodyImgsectionContainer{
+        order: 3;
+        margin-top: auto;
+    }
+    #crewPageBodyTextsection{
+        display: flex;
+        flex-direction: column;
+    }
+    #crewPageBodyTextDiv{
+        order: 1;
+    }
+    #crewPageBodySelectionDiv{
+        order: 2;
+    }
+    #crewPageBodyTextsection{
+        padding: 0 70px;
+    }
+    /* technology */
+    #technologyPageBodyHeading{
+        text-align: left;
+        margin: 40px 20px;
+    }
+    #technologyPageBodyTextDiv{
+        padding: 0 70px;
+    }
+    #technologyInfo{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1025px){
+    #navLaptop{
+        padding: 0 40px;
+        padding-top: 10px;
+    }
+    .navItems{
+        margin: 10px 20px;
+        font-size: 14.5px;
+    }
+    #homePage{
+        background-image: url("assets\\home\\background-home-desktop.jpg");
+    }
+    #homePageBody{
+        display: flex;
+        flex-direction: row;
+        padding-top: 100px;
+    }
+    #homePageBodyTop{
+        margin-left: 80px;
+        text-align: left;
+    }
+    p{
+        line-height: 1.4;
+        font-size: 18px;
+    }
+    #homePageBodySecond{
+        padding-top: 100px;
+    }
+    #exploreDiv{
+        width: 180px;
+        height: 180px;
+        font-size: 28px;
+    }
+    /* destination */
+
+    #destinationPageBody{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    #destinationPageBodyTop{
+        width: 50%;
+    }
+    #destinationPageBodyBottom{
+        width: 50%;
+        padding: 0;
+        padding-top: 100px;
+        padding-right: 70px;
+        text-align: left;
+    }
+    #destinationPageBodyTopText{
+        font-size: 19px;
+    }
+    #destinationItemsDiv{
+        justify-content: flex-start;
+        position: relative;
+        left: -10px;
+        margin-bottom: 40px;
+    }
+    .destinationItems{
+        font-size: 16px;
+    }
+    #selectDestinationTitle{
+        font-size: 5em;
+    }
+    #destinationBottomInfo{
+        display: flex;
+    }
+    #destinationBottom1{
+        margin-right: 70px;
+    }
+    #selectDestinationText{
+        margin-bottom: 80px;
+        font-size: 18px;
+    }
+    .extratextType1{
+        margin: 20px 0;
+        font-size: 16px;
+    }
+    .extratextType2{
+        margin: 10px 0;
+        font-size: 35px;
+    }
+    #destinationPageBodyTopImgDiv{
+        padding-top: 100px;
+        height: auto;
+        width: auto;
+    }
+    .destinationImages{
+        width: 270px;
+    }
+    /* crew */
+    #crewPage{
+        background-image: url("assets\\crew\\background-crew-desktop.jpg");
+    }
+    #crewPageBody{
+        flex-direction: row;
+        min-height: calc(100vh - 70px);
+    }
+    #crewPageBodyHeading{
+        display: none;
+    }
+    #crewPageBodyTextsection{
+        text-align: left;
+        padding-left: 100px;
+    }
+    #crewPageBodySelectionDiv{
+        justify-content: flex-start;
+        position: relative;
+        left: -10px;
+        margin-top: 100px;
+    }
+    #crewName{
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+    #crewInfo{
+        font-size: 18px;
+    }
+    #crewPosition{
+        font-size: 25px;
+    }
+    #crewPageBodyHeading2{
+        display: block;
+        margin: 70px 0;
+        margin-bottom: 120px;
+        font-size: 19px;
+    }
+    #crewPageBodyImgsectionContainer{
+        margin: auto;
+        height: calc(100vh - 70px);
+        display: flex;
+    }
+    #crewPageBodyImgsection{
+        margin-top: auto;
+    }
+    .crewPageBodyImgs{
+        width: 400px;
+    }
+    /* technology */
+    #technologyPage{
+        background-image: url("assets\\technology\\background-technology-desktop.jpg");
+    }
+    #technologyPageBodyHeading{
+        display: none;
+    }
+    #technologyPageBody{
+        display: flex;
+        height: calc(100vh - 70px);
+    }
+    #technologyPageBodyImgsection{
+        order: 2;
+        width: 40%;
+        display: flex;
+    }
+    #technologyPageBodyTextsection{
+        order: 1;
+        width: 60%;
+        display: flex;
+        padding:0 70px;
+    }
+    #technologyPageBodySelectionDiv{
+        flex-direction: column;
+        margin: 20px;
+        align-items: flex-start;
+        justify-content: center;
+        width: auto;
+    }
+    #technologyPageBodyTextDiv{
+        padding:0 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #techImg1{
+        display: none;
+    }
+    #techImg2{
+        display: block;
+        margin: auto;
+    }
+    #technologyLabel{
+        font-size: 15px;
+    }
+    .technologyPageBodySelectionItems{
+        width: 50px;
+        height: 50px;
+        margin: 10px 0;
+    }
+    #technologyName{
+        font-size: 45px;
+    }
+    #technologyPageBodyImg12{
+        display: block;
+    }
+    #technologyInfo{
+        font-size: 18px;
+    }
+
+    .crewPageBodySelectionItems{
+        width: 15px;
+        height: 15px;
+    }
+}
